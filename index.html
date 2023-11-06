@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div  class="formulaire">
+    <h1>Liste de Tâches</h1>
+    <ul id="liste-taches" class="cartes-container">
+        <!-- Les tâches seront générées dynamiquement en utilisant JavaScript -->
+    </ul>
+
+    <form id="formulaire-tache">
+        <label for="nom-tache">Nom de la tâche:</label>
+        <input type="text" id="nom-tache" placeholder="nom de la tâche" required>
+        <label for="priorite-tache">Priorité de la tâche:</label>
+        <input type="text" id="priorite-tache" required placeholder="haute, moyenne ou faible">
+        <button type="button" id="ajouter-tache" class="boutonajout">Ajouter Tâche</button>
+    </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

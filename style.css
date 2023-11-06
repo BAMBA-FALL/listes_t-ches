@@ -1,0 +1,103 @@
+/* Style du formulaire */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(241, 236, 236, 0.033);
+    width: 800px;
+    margin: 0 auto; /* Ajoutez cette ligne pour centrer le formulaire horizontalement */
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style des boutons */
+.boutonajout {
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; 
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.boutonajout:hover {
+    background-color: #0056b3;
+}
+
+
+ul{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+
+/* Style des boutons "Supprimer" */
+.bouton-supprimer {
+    background-color: red ;
+    color: white !important;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; 
+    border-radius: 5px;
+    margin: 30px;
+}
+
+/* Style des boutons "Modifier" */
+.bouton-modifier {
+    color: green;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; 
+    border-radius: 5px;
+    margin: 30px;
+}
+
+
+/* Styles pour les cartes */
+.carte {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.carte:hover {
+    transform: translateY(-10px); /* Soulève la carte de 10 pixels vers le haut au survol */
+    z-index: 1;
+}
+
+
+/* Styles pour le conteneur de cartes */
+.cartes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
